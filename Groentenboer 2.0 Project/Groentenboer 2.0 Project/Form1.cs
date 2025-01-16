@@ -32,6 +32,7 @@ namespace Groentenboer_2._0_Project
             AantalTellerTxt.Enabled = false;
             numbPad.Visible = false;
             DeleteBtn.Visible = false;
+            TotalPriceTbx.Enabled = false;
         }
 
         public void ProductSelect(object sender, EventArgs e, DatabaseHelper.GroenteNaam item)
@@ -98,8 +99,6 @@ namespace Groentenboer_2._0_Project
                 AddUserControl(bonPrijs);
 
                 numpad_visable();
-
-                /*bonUserControl.SetContent(ProductnaamTbx.Text, bonPrijs);*/
             }
         }
 
@@ -163,8 +162,6 @@ namespace Groentenboer_2._0_Project
 
         private Bitmap GetProductImage(String productName)
         {
-            //List<DatabaseHelper.GroenteNaam> groentenLijst = dbHelper.GetGroenten();
-            //var product = groentenLijst.FirstOrDefault(g => g.productNaam == productName);
             Bitmap test = (Bitmap) Properties.Resources.ResourceManager.GetObject(productName);
             return test;
         }
@@ -180,6 +177,17 @@ namespace Groentenboer_2._0_Project
             bonUserControl.BackColor = SystemColors.Window;
 
             string bonAantal = AantalTellerTxt.Text;
+
+            if (decimal.Parse(TotalPriceTbx.Text) > 0) {
+                decimal newPrice = decimal.Parse(TotalPriceTbx.Text);
+                newPrice += bonPrijs;
+
+                TotalPriceTbx.Text = newPrice.ToString("0.00");
+            }
+            else
+            {
+                TotalPriceTbx.Text = bonPrijs.ToString("0.00");
+            }
 
             bonUserControl.SetContent(bonAantal, plaatje, bonPrijs);
 

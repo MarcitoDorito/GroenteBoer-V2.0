@@ -52,14 +52,25 @@
             this.Numb7Button = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.BonFlowPannel = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.TotalPriceTbx = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BonGrid)).BeginInit();
             this.numbPad.SuspendLayout();
+            this.BonFlowPannel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // productenFlp
             // 
-            this.productenFlp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.productenFlp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.productenFlp.AutoScroll = true;
             this.productenFlp.BackColor = System.Drawing.Color.DarkGray;
@@ -73,7 +84,7 @@
             // BonGrid
             // 
             this.BonGrid.AllowUserToAddRows = false;
-            this.BonGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.BonGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BonGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BonGrid.Location = new System.Drawing.Point(984, 15);
@@ -348,7 +359,7 @@
             // DeleteBtn
             // 
             this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteBtn.Location = new System.Drawing.Point(1311, 805);
+            this.DeleteBtn.Location = new System.Drawing.Point(325, 7);
             this.DeleteBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(202, 75);
@@ -361,11 +372,76 @@
             // 
             this.BonFlowPannel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BonFlowPannel.BackColor = System.Drawing.Color.Beige;
+            this.BonFlowPannel.Controls.Add(this.panel3);
             this.BonFlowPannel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.BonFlowPannel.Location = new System.Drawing.Point(984, 15);
             this.BonFlowPannel.Name = "BonFlowPannel";
             this.BonFlowPannel.Size = new System.Drawing.Size(530, 780);
             this.BonFlowPannel.TabIndex = 18;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(15, 15);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(962, 119);
+            this.panel1.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(5, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 55);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(5, 61);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(135, 55);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.DeleteBtn);
+            this.panel2.Location = new System.Drawing.Point(984, 805);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(530, 82);
+            this.panel2.TabIndex = 20;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.TotalPriceTbx);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(376, 55);
+            this.panel3.TabIndex = 1;
+            // 
+            // TotalPriceTbx
+            // 
+            this.TotalPriceTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPriceTbx.Location = new System.Drawing.Point(150, 4);
+            this.TotalPriceTbx.Name = "TotalPriceTbx";
+            this.TotalPriceTbx.Size = new System.Drawing.Size(223, 48);
+            this.TotalPriceTbx.TabIndex = 0;
+            this.TotalPriceTbx.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "TotalPrice";
             // 
             // Form1
             // 
@@ -373,8 +449,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1526, 892);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.BonFlowPannel);
-            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.numbPad);
             this.Controls.Add(this.BonGrid);
             this.Controls.Add(this.productenFlp);
@@ -385,6 +462,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.BonGrid)).EndInit();
             this.numbPad.ResumeLayout(false);
             this.numbPad.PerformLayout();
+            this.BonFlowPannel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -415,6 +497,13 @@
         private System.Windows.Forms.Button Numb7Button;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.FlowLayoutPanel BonFlowPannel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox TotalPriceTbx;
     }
 }
 
