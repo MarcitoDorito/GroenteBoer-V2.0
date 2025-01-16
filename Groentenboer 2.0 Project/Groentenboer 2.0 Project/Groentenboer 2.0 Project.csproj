@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Groentenboer_1._0_Project</RootNamespace>
-    <AssemblyName>Groentenboer 1.0 Project</AssemblyName>
+    <RootNamespace>Groentenboer_2._0_Project</RootNamespace>
+    <AssemblyName>Groentenboer 2.0 Project</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

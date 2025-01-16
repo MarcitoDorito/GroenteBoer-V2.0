@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 using MySql.Data;
 using Google.Protobuf.WellKnownTypes;
 
-namespace Groentenboer_1._0_Project
+namespace Groentenboer_2._0_Project
 {
     public partial class Form1 : Form
     {
@@ -77,7 +77,7 @@ namespace Groentenboer_1._0_Project
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            if (AantalTellerTxt.Text == "0" || string.IsNullOrEmpty(ProductnaamTbx.Text) || string.IsNullOrEmpty(PrijsTbx.Text))
+            if (int.Parse(AantalTellerTxt.Text) < 1 || string.IsNullOrEmpty(ProductnaamTbx.Text) || string.IsNullOrEmpty(PrijsTbx.Text))
             {
                 MessageBox.Show("Voer een aantal in en selecteer een product!");
             }
@@ -93,25 +93,12 @@ namespace Groentenboer_1._0_Project
                 BonGrid.Rows[BonGrid.Rows.Count - 1].Cells[2].Value = totalPrice.ToString("0.00");
 
                 // Clear the input fields
-                ProductnaamTbx.Text = "";
-                PrijsTbx.Text = "";
-                productSelected = false;
+                
+
+                AddUserControl(bonPrijs);
+
                 numpad_visable();
 
-/*                Bitmap BonPlaatje;*/
-
-
-                BonUserControl bonUserControl = new BonUserControl();
-
-                BonFlowPannel.Controls.Add(bonUserControl);
-
-                bonUserControl.BackColor = SystemColors.Window;
-
-                string bonAantal = AantalTellerTxt.Text;
-
-                bonUserControl.SetContent(bonAantal, bonPrijs);
-                
-                AantalTellerTxt.Text = "0";
                 /*bonUserControl.SetContent(ProductnaamTbx.Text, bonPrijs);*/
             }
         }
@@ -145,7 +132,14 @@ namespace Groentenboer_1._0_Project
 
         private void numpad_visable()
         {
-            numbPad.Visible = productSelected;
+            if (productSelected)
+            {
+                numbPad.Visible = true;
+            }
+            else
+            {
+                numbPad.Visible = false;
+            }
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
@@ -166,8 +160,35 @@ namespace Groentenboer_1._0_Project
                 selectedRowIndex = -1;
             }
         }
+
+        private Bitmap GetProductImage(String productName)
+        {
+            //List<DatabaseHelper.GroenteNaam> groentenLijst = dbHelper.GetGroenten();
+            //var product = groentenLijst.FirstOrDefault(g => g.productNaam == productName);
+            Bitmap test = (Bitmap) Properties.Resources.ResourceManager.GetObject(productName);
+            return test;
+        }
+
+        private void AddUserControl(decimal bonPrijs)
+        {
+            BonUserControl bonUserControl = new BonUserControl();
+
+            Bitmap plaatje = GetProductImage(ProductnaamTbx.Text);
+
+            BonFlowPannel.Controls.Add(bonUserControl);
+
+            bonUserControl.BackColor = SystemColors.Window;
+
+            string bonAantal = AantalTellerTxt.Text;
+
+            bonUserControl.SetContent(bonAantal, plaatje, bonPrijs);
+
+            AantalTellerTxt.Text = "0";
+            ProductnaamTbx.Text = "";
+
+            PrijsTbx.Text = "";
+
+            productSelected = false;
+        }
     }
 }
-
-
-

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace Groentenboer_1._0_Project
+namespace Groentenboer_2._0_Project
 {
     public partial class UserControl1 : UserControl
     {

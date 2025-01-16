@@ -1,4 +1,4 @@
-﻿namespace Groentenboer_1._0_Project
+﻿namespace Groentenboer_2._0_Project
 {
     partial class Form1
     {
@@ -58,8 +58,8 @@
             // 
             // productenFlp
             // 
-            this.productenFlp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.productenFlp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.productenFlp.AutoScroll = true;
             this.productenFlp.BackColor = System.Drawing.Color.DarkGray;
@@ -73,7 +73,7 @@
             // BonGrid
             // 
             this.BonGrid.AllowUserToAddRows = false;
-            this.BonGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.BonGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BonGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BonGrid.Location = new System.Drawing.Point(984, 15);
@@ -362,9 +362,9 @@
             this.BonFlowPannel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BonFlowPannel.BackColor = System.Drawing.Color.Beige;
             this.BonFlowPannel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.BonFlowPannel.Location = new System.Drawing.Point(985, 15);
+            this.BonFlowPannel.Location = new System.Drawing.Point(984, 15);
             this.BonFlowPannel.Name = "BonFlowPannel";
-            this.BonFlowPannel.Size = new System.Drawing.Size(529, 780);
+            this.BonFlowPannel.Size = new System.Drawing.Size(530, 780);
             this.BonFlowPannel.TabIndex = 18;
             // 
             // Form1

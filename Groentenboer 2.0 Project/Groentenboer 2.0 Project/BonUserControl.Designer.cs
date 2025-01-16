@@ -1,4 +1,4 @@
-﻿namespace Groentenboer_1._0_Project
+﻿namespace Groentenboer_2._0_Project
 {
     partial class BonUserControl
     {

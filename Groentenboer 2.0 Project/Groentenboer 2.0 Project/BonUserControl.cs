@@ -8,19 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Groentenboer_1._0_Project
+namespace Groentenboer_2._0_Project
 {
     public partial class BonUserControl : UserControl
     {
         public BonUserControl()
         {
             InitializeComponent();
+            BonImages.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        public void SetContent(string Aantal, /*Bitmap BonPlaatje,*/ decimal prijs)
+        public void SetContent(string Aantal, Bitmap BonPlaatje,decimal prijs)
         {
             AantalTxt.Text = Aantal;
-/*            BonImages.Image = BonPlaatje;*/
+            BonImages.Image = BonPlaatje;
             label2.Text = "€" + prijs.ToString("0.00");
         }
     }
