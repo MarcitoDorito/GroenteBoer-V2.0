@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.productenFlp = new System.Windows.Forms.FlowLayoutPanel();
-            this.BonGrid = new System.Windows.Forms.DataGridView();
             this.numbPad = new System.Windows.Forms.Panel();
             this.addButton = new System.Windows.Forms.Button();
             this.AantalTellerTxt = new System.Windows.Forms.TextBox();
@@ -52,19 +51,19 @@
             this.Numb7Button = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.BonFlowPannel = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.TotalPriceTbx = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.BonGrid)).BeginInit();
+            this.TotalPriceTbx = new System.Windows.Forms.RichTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.BonGrid = new System.Windows.Forms.DataGridView();
             this.numbPad.SuspendLayout();
-            this.BonFlowPannel.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BonGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // productenFlp
@@ -78,24 +77,8 @@
             this.productenFlp.Location = new System.Drawing.Point(15, 142);
             this.productenFlp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.productenFlp.Name = "productenFlp";
-            this.productenFlp.Size = new System.Drawing.Size(962, 505);
+            this.productenFlp.Size = new System.Drawing.Size(963, 505);
             this.productenFlp.TabIndex = 0;
-            // 
-            // BonGrid
-            // 
-            this.BonGrid.AllowUserToAddRows = false;
-            this.BonGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BonGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BonGrid.Location = new System.Drawing.Point(984, 15);
-            this.BonGrid.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.BonGrid.Name = "BonGrid";
-            this.BonGrid.RowHeadersWidth = 51;
-            this.BonGrid.RowTemplate.Height = 24;
-            this.BonGrid.Size = new System.Drawing.Size(530, 780);
-            this.BonGrid.TabIndex = 15;
-            this.BonGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BonGrid_CellClick);
-            this.BonGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BonGrid_CellClick);
             // 
             // numbPad
             // 
@@ -124,7 +107,7 @@
             this.numbPad.Location = new System.Drawing.Point(16, 654);
             this.numbPad.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.numbPad.Name = "numbPad";
-            this.numbPad.Size = new System.Drawing.Size(960, 233);
+            this.numbPad.Size = new System.Drawing.Size(962, 233);
             this.numbPad.TabIndex = 16;
             // 
             // addButton
@@ -180,7 +163,7 @@
             // button13
             // 
             this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.Location = new System.Drawing.Point(843, 166);
+            this.button13.Location = new System.Drawing.Point(845, 166);
             this.button13.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(100, 45);
@@ -192,7 +175,7 @@
             // Numb00Button
             // 
             this.Numb00Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb00Button.Location = new System.Drawing.Point(735, 166);
+            this.Numb00Button.Location = new System.Drawing.Point(737, 166);
             this.Numb00Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb00Button.Name = "Numb00Button";
             this.Numb00Button.Size = new System.Drawing.Size(100, 45);
@@ -216,7 +199,7 @@
             // Numb0Button
             // 
             this.Numb0Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb0Button.Location = new System.Drawing.Point(627, 166);
+            this.Numb0Button.Location = new System.Drawing.Point(629, 166);
             this.Numb0Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb0Button.Name = "Numb0Button";
             this.Numb0Button.Size = new System.Drawing.Size(100, 45);
@@ -228,7 +211,7 @@
             // num3Button
             // 
             this.num3Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.num3Button.Location = new System.Drawing.Point(843, 114);
+            this.num3Button.Location = new System.Drawing.Point(845, 114);
             this.num3Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.num3Button.Name = "num3Button";
             this.num3Button.Size = new System.Drawing.Size(100, 45);
@@ -263,7 +246,7 @@
             // numb2Button
             // 
             this.numb2Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.numb2Button.Location = new System.Drawing.Point(735, 114);
+            this.numb2Button.Location = new System.Drawing.Point(737, 114);
             this.numb2Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.numb2Button.Name = "numb2Button";
             this.numb2Button.Size = new System.Drawing.Size(100, 45);
@@ -275,7 +258,7 @@
             // num1Button
             // 
             this.num1Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.num1Button.Location = new System.Drawing.Point(627, 114);
+            this.num1Button.Location = new System.Drawing.Point(629, 114);
             this.num1Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.num1Button.Name = "num1Button";
             this.num1Button.Size = new System.Drawing.Size(100, 45);
@@ -287,7 +270,7 @@
             // Numb6Button
             // 
             this.Numb6Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb6Button.Location = new System.Drawing.Point(843, 62);
+            this.Numb6Button.Location = new System.Drawing.Point(845, 62);
             this.Numb6Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb6Button.Name = "Numb6Button";
             this.Numb6Button.Size = new System.Drawing.Size(100, 45);
@@ -299,7 +282,7 @@
             // Numb5Button
             // 
             this.Numb5Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb5Button.Location = new System.Drawing.Point(735, 62);
+            this.Numb5Button.Location = new System.Drawing.Point(737, 62);
             this.Numb5Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb5Button.Name = "Numb5Button";
             this.Numb5Button.Size = new System.Drawing.Size(100, 45);
@@ -311,7 +294,7 @@
             // Numb4Button
             // 
             this.Numb4Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb4Button.Location = new System.Drawing.Point(627, 62);
+            this.Numb4Button.Location = new System.Drawing.Point(629, 62);
             this.Numb4Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb4Button.Name = "Numb4Button";
             this.Numb4Button.Size = new System.Drawing.Size(100, 45);
@@ -323,7 +306,7 @@
             // Numb9Button
             // 
             this.Numb9Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb9Button.Location = new System.Drawing.Point(843, 9);
+            this.Numb9Button.Location = new System.Drawing.Point(845, 9);
             this.Numb9Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb9Button.Name = "Numb9Button";
             this.Numb9Button.Size = new System.Drawing.Size(100, 45);
@@ -335,7 +318,7 @@
             // Numb8Button
             // 
             this.Numb8Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb8Button.Location = new System.Drawing.Point(735, 9);
+            this.Numb8Button.Location = new System.Drawing.Point(737, 9);
             this.Numb8Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb8Button.Name = "Numb8Button";
             this.Numb8Button.Size = new System.Drawing.Size(100, 45);
@@ -347,7 +330,7 @@
             // Numb7Button
             // 
             this.Numb7Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb7Button.Location = new System.Drawing.Point(627, 9);
+            this.Numb7Button.Location = new System.Drawing.Point(629, 9);
             this.Numb7Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb7Button.Name = "Numb7Button";
             this.Numb7Button.Size = new System.Drawing.Size(100, 45);
@@ -359,7 +342,7 @@
             // DeleteBtn
             // 
             this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteBtn.Location = new System.Drawing.Point(325, 7);
+            this.DeleteBtn.Location = new System.Drawing.Point(326, 8);
             this.DeleteBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(202, 75);
@@ -370,24 +353,72 @@
             // 
             // BonFlowPannel
             // 
-            this.BonFlowPannel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BonFlowPannel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BonFlowPannel.AutoScroll = true;
             this.BonFlowPannel.BackColor = System.Drawing.Color.Beige;
-            this.BonFlowPannel.Controls.Add(this.panel3);
-            this.BonFlowPannel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.BonFlowPannel.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
             this.BonFlowPannel.Location = new System.Drawing.Point(984, 15);
             this.BonFlowPannel.Name = "BonFlowPannel";
-            this.BonFlowPannel.Size = new System.Drawing.Size(530, 780);
+            this.BonFlowPannel.Size = new System.Drawing.Size(530, 712);
             this.BonFlowPannel.TabIndex = 18;
+            this.BonFlowPannel.WrapContents = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.TotalPriceTbx);
+            this.panel3.Location = new System.Drawing.Point(984, 734);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(528, 55);
+            this.panel3.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Totaal Prijs";
+            // 
+            // TotalPriceTbx
+            // 
+            this.TotalPriceTbx.AutoWordSelection = true;
+            this.TotalPriceTbx.BackColor = System.Drawing.SystemColors.Window;
+            this.TotalPriceTbx.Enabled = false;
+            this.TotalPriceTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPriceTbx.Location = new System.Drawing.Point(302, 3);
+            this.TotalPriceTbx.Multiline = false;
+            this.TotalPriceTbx.Name = "TotalPriceTbx";
+            this.TotalPriceTbx.ReadOnly = true;
+            this.TotalPriceTbx.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TotalPriceTbx.Size = new System.Drawing.Size(223, 49);
+            this.TotalPriceTbx.TabIndex = 0;
+            this.TotalPriceTbx.Text = "0";
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(15, 15);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(962, 119);
+            this.panel1.Size = new System.Drawing.Size(963, 118);
             this.panel1.TabIndex = 19;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(5, 60);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(135, 55);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -398,50 +429,30 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(5, 61);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 55);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.DeleteBtn);
             this.panel2.Location = new System.Drawing.Point(984, 805);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(530, 82);
             this.panel2.TabIndex = 20;
             // 
-            // panel3
+            // BonGrid
             // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.TotalPriceTbx);
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(376, 55);
-            this.panel3.TabIndex = 1;
-            // 
-            // TotalPriceTbx
-            // 
-            this.TotalPriceTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalPriceTbx.Location = new System.Drawing.Point(150, 4);
-            this.TotalPriceTbx.Name = "TotalPriceTbx";
-            this.TotalPriceTbx.Size = new System.Drawing.Size(223, 48);
-            this.TotalPriceTbx.TabIndex = 0;
-            this.TotalPriceTbx.Text = "0";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "TotalPrice";
+            this.BonGrid.AllowUserToAddRows = false;
+            this.BonGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BonGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BonGrid.Location = new System.Drawing.Point(984, 15);
+            this.BonGrid.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.BonGrid.Name = "BonGrid";
+            this.BonGrid.RowHeadersWidth = 51;
+            this.BonGrid.RowTemplate.Height = 24;
+            this.BonGrid.Size = new System.Drawing.Size(530, 780);
+            this.BonGrid.TabIndex = 15;
+            this.BonGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BonGrid_CellClick);
+            this.BonGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BonGrid_CellClick);
             // 
             // Form1
             // 
@@ -449,6 +460,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1526, 892);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BonFlowPannel);
@@ -459,14 +471,13 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.BonGrid)).EndInit();
             this.numbPad.ResumeLayout(false);
             this.numbPad.PerformLayout();
-            this.BonFlowPannel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BonGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -474,7 +485,6 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel productenFlp;
-        private System.Windows.Forms.DataGridView BonGrid;
         private System.Windows.Forms.Panel numbPad;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.TextBox AantalTellerTxt;
@@ -504,6 +514,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox TotalPriceTbx;
+        private System.Windows.Forms.DataGridView BonGrid;
     }
 }
 
