@@ -1,6 +1,6 @@
 ﻿namespace Groentenboer_2._0_Project
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -57,12 +57,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.BonKnopPanel = new System.Windows.Forms.Panel();
             this.BonGrid = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             this.numbPad.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.BonKnopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BonGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -342,10 +343,10 @@
             // DeleteBtn
             // 
             this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteBtn.Location = new System.Drawing.Point(326, 8);
+            this.DeleteBtn.Location = new System.Drawing.Point(375, 5);
             this.DeleteBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(202, 75);
+            this.DeleteBtn.Size = new System.Drawing.Size(152, 75);
             this.DeleteBtn.TabIndex = 17;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = true;
@@ -429,14 +430,15 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // BonKnopPanel
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.DeleteBtn);
-            this.panel2.Location = new System.Drawing.Point(984, 805);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(530, 82);
-            this.panel2.TabIndex = 20;
+            this.BonKnopPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BonKnopPanel.Controls.Add(this.button3);
+            this.BonKnopPanel.Controls.Add(this.DeleteBtn);
+            this.BonKnopPanel.Location = new System.Drawing.Point(984, 805);
+            this.BonKnopPanel.Name = "BonKnopPanel";
+            this.BonKnopPanel.Size = new System.Drawing.Size(530, 82);
+            this.BonKnopPanel.TabIndex = 20;
             // 
             // BonGrid
             // 
@@ -454,29 +456,39 @@
             this.BonGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BonGrid_CellClick);
             this.BonGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BonGrid_CellClick);
             // 
-            // Form1
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(180, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(168, 76);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Bewerken";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1526, 892);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.BonKnopPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BonFlowPannel);
             this.Controls.Add(this.numbPad);
             this.Controls.Add(this.BonGrid);
             this.Controls.Add(this.productenFlp);
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "KassaScherm";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.numbPad.ResumeLayout(false);
             this.numbPad.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.BonKnopPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BonGrid)).EndInit();
             this.ResumeLayout(false);
 
@@ -510,11 +522,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel BonKnopPanel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox TotalPriceTbx;
         private System.Windows.Forms.DataGridView BonGrid;
+        private System.Windows.Forms.Button button3;
     }
 }
 

@@ -10,10 +10,11 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using MySql.Data;
 using Google.Protobuf.WellKnownTypes;
+using System.Diagnostics;
 
 namespace Groentenboer_2._0_Project
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         public decimal optelPrijs;
         private const string ConnectionString = "Server=localhost;Database=groenteboer;user=root;";
@@ -22,8 +23,9 @@ namespace Groentenboer_2._0_Project
         private decimal totalPrice = 0m;
         private int selectedRowIndex = -1;
         private bool productSelected = false;
+        private bool bonSelected = false;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             productNaamTxt.Text = "Product";
@@ -31,19 +33,33 @@ namespace Groentenboer_2._0_Project
             aantalTxt.Text = "Prijs";
             AantalTellerTxt.Enabled = false;
             numbPad.Visible = false;
-            DeleteBtn.Visible = false;
+            BonKnopPanel.Visible = false;
             TotalPriceTbx.Enabled = false;
         }
 
         public void ProductSelect(object sender, EventArgs e, DatabaseHelper.GroenteNaam item)
         {
-            productSelected = true;
             decimal newPrijs = new decimal(item.prijs) / 100;
             optelPrijs = newPrijs;
             ProductnaamTbx.Text = item.productNaam;
             AantalTellerTxt.Text = "0";
             PrijsTbx.Text = newPrijs.ToString("0.00");
             numpad_visable();
+        }
+
+        public void BonSelect(object sender, EventArgs e)
+        {
+            if (bonSelected)
+            {
+                BonKnopPanel.Visible = false;
+                bonSelected = false;
+            }
+            else
+            {
+                BonKnopPanel.Visible = true;
+                bonSelected = true;
+            }
+            MessageBox.Show("test");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -84,21 +100,22 @@ namespace Groentenboer_2._0_Project
             }
             else
             {
-                decimal bonPrijs = optelPrijs * decimal.Parse(AantalTellerTxt.Text);
-                totalPrice += bonPrijs;
+                numpad_visable();
+                CalculatePrice();
+                /*decimal bonPrijs = optelPrijs * decimal.Parse(AantalTellerTxt.Text);*/
+                /*totalPrice += bonPrijs;*/
 
                 // Add new row to BonGrid
-                BonGrid.Rows.Insert(totalRowIndex, ProductnaamTbx.Text, AantalTellerTxt.Text, bonPrijs.ToString("0.00"));
+                /*BonGrid.Rows.Insert(totalRowIndex, ProductnaamTbx.Text, AantalTellerTxt.Text, bonPrijs.ToString("0.00"));*/
 
                 // Update the total price row
-                BonGrid.Rows[BonGrid.Rows.Count - 1].Cells[2].Value = totalPrice.ToString("0.00");
+                /*BonGrid.Rows[BonGrid.Rows.Count - 1].Cells[2].Value = totalPrice.ToString("0.00");*/
 
                 // Clear the input fields
                 
 
-                AddUserControl(bonPrijs);
+                /*AddUserControl(bonPrijs);*/
 
-                numpad_visable();
             }
         }
 
@@ -131,19 +148,21 @@ namespace Groentenboer_2._0_Project
 
         private void numpad_visable()
         {
-            if (productSelected)
+            if (!productSelected)
             {
+                productSelected = true;
                 numbPad.Visible = true;
             }
             else
             {
+                productSelected = false;
                 numbPad.Visible = false;
             }
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-            if (selectedRowIndex >= 0 && selectedRowIndex != BonGrid.Rows.Count - 1)
+/*            if (selectedRowIndex >= 0 && selectedRowIndex != BonGrid.Rows.Count - 1)
             {
                 DataGridViewRow row = BonGrid.Rows[selectedRowIndex];
                 decimal rowPrice = Convert.ToDecimal(row.Cells[2].Value);
@@ -157,13 +176,14 @@ namespace Groentenboer_2._0_Project
 
                 DeleteBtn.Visible = false;
                 selectedRowIndex = -1;
-            }
+            }*/
+            
         }
 
         private Bitmap GetProductImage(String productName)
         {
-            Bitmap test = (Bitmap) Properties.Resources.ResourceManager.GetObject(productName);
-            return test;
+            Bitmap bonImages = (Bitmap) Properties.Resources.ResourceManager.GetObject(productName);
+            return bonImages;
         }
 
         private void AddUserControl(decimal bonPrijs)
@@ -171,6 +191,8 @@ namespace Groentenboer_2._0_Project
             BonUserControl bonUserControl = new BonUserControl();
 
             Bitmap plaatje = GetProductImage(ProductnaamTbx.Text);
+
+            bonUserControl.Click += new EventHandler((s, e2) => BonSelect(s, e2));
 
             BonFlowPannel.Controls.Add(bonUserControl);
 
@@ -189,7 +211,7 @@ namespace Groentenboer_2._0_Project
                 TotalPriceTbx.Text = bonPrijs.ToString("0.00");
             }
 
-            bonUserControl.SetContent(bonAantal, plaatje, bonPrijs);
+            bonUserControl.SetContent(bonAantal, plaatje, bonPrijs, this);
 
             AantalTellerTxt.Text = "0";
             ProductnaamTbx.Text = "";
@@ -197,6 +219,23 @@ namespace Groentenboer_2._0_Project
             PrijsTbx.Text = "";
 
             productSelected = false;
+        }
+
+        private void CalculatePrice()
+        {
+            decimal bonPrijs = optelPrijs * decimal.Parse(AantalTellerTxt.Text);
+
+            AddUserControl(bonPrijs);
+        }
+
+        public void RemoveBon(BonUserControl BonProduct)
+        {
+            /*decimal removePrice = decimal.Parse(BonProduct.label2.Text);*/
+            decimal.TryParse(BonProduct.label2.Text, out decimal ProductBonPrijs);
+            decimal RemovePrijs = ProductBonPrijs;
+            TotalPriceTbx.Text = (decimal.Parse(TotalPriceTbx.Text) - RemovePrijs).ToString("0.00");
+            BonFlowPannel.Controls.Remove(BonProduct);
+
         }
     }
 }

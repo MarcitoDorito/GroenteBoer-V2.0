@@ -34,7 +34,6 @@ C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groent
 C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\obj\Debug\Groentenboer 2.0 Project.csproj.CoreCompileInputs.cache
 C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\obj\Debug\Groenten.4D5D9755.Up2Date
 C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\obj\Debug\Groentenboer_2._0_Project.BonUserControl.resources
-C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\obj\Debug\Groentenboer_2._0_Project.Form1.resources
 C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\obj\Debug\Groentenboer_2._0_Project.Properties.Resources.resources
 C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\obj\Debug\Groentenboer_2._0_Project.UserControl1.resources
 C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\bin\Debug\Groentenboer 2.0 Project.exe.config
@@ -42,3 +41,4 @@ C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groent
 C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\bin\Debug\Groentenboer 2.0 Project.pdb
 C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\obj\Debug\Groentenboer 2.0 Project.exe
 C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\obj\Debug\Groentenboer 2.0 Project.pdb
+C:\Users\marci\Documents\GitHub\GroenteBoer-V2.0\Groentenboer 2.0 Project\Groentenboer 2.0 Project\obj\Debug\Groentenboer_2._0_Project.MainForm.resources
