@@ -26,8 +26,9 @@ namespace Groentenboer_2._0_Project
             this.Controls.Add(removeBtn);
         }
 
-        public void SetContent(string Aantal, Bitmap BonPlaatje,decimal prijs, MainForm mf)
+        public void SetContent(string productNaam, string Aantal, Bitmap BonPlaatje,decimal prijs, MainForm mf)
         {
+            productNaamLbl.Text = productNaam;
             AantalTxt.Text = Aantal;
             BonImages.Image = BonPlaatje;
             label2.Text = /*"€" + */prijs.ToString("0.00");

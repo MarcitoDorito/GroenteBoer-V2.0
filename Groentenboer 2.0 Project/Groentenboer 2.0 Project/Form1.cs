@@ -51,15 +51,27 @@ namespace Groentenboer_2._0_Project
         {
             if (bonSelected)
             {
-                BonKnopPanel.Visible = false;
+                /*BonKnopPanel.Visible = false;*/
                 bonSelected = false;
             }
             else
             {
-                BonKnopPanel.Visible = true;
+                /*BonKnopPanel.Visible = true;*/
                 bonSelected = true;
             }
             MessageBox.Show("test");
+        }
+
+        public void FlowPanelfilledChecker()
+        {
+            if (BonFlowPannel.Controls.Count > 0)
+            {
+                BonKnopPanel.Visible = true;
+            }
+            else
+            {
+                BonKnopPanel.Visible = false;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -102,6 +114,7 @@ namespace Groentenboer_2._0_Project
             {
                 numpad_visable();
                 CalculatePrice();
+                FlowPanelfilledChecker();
                 /*decimal bonPrijs = optelPrijs * decimal.Parse(AantalTellerTxt.Text);*/
                 /*totalPrice += bonPrijs;*/
 
@@ -112,7 +125,7 @@ namespace Groentenboer_2._0_Project
                 /*BonGrid.Rows[BonGrid.Rows.Count - 1].Cells[2].Value = totalPrice.ToString("0.00");*/
 
                 // Clear the input fields
-                
+
 
                 /*AddUserControl(bonPrijs);*/
 
@@ -162,22 +175,24 @@ namespace Groentenboer_2._0_Project
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-/*            if (selectedRowIndex >= 0 && selectedRowIndex != BonGrid.Rows.Count - 1)
-            {
-                DataGridViewRow row = BonGrid.Rows[selectedRowIndex];
-                decimal rowPrice = Convert.ToDecimal(row.Cells[2].Value);
-                totalPrice -= rowPrice;
+            /*            if (selectedRowIndex >= 0 && selectedRowIndex != BonGrid.Rows.Count - 1)
+                        {
+                            DataGridViewRow row = BonGrid.Rows[selectedRowIndex];
+                            decimal rowPrice = Convert.ToDecimal(row.Cells[2].Value);
+                            totalPrice -= rowPrice;
 
-                // Remove the row from the DataGridView
-                BonGrid.Rows.RemoveAt(selectedRowIndex);
+                            // Remove the row from the DataGridView
+                            BonGrid.Rows.RemoveAt(selectedRowIndex);
 
-                // Update the total price row
-                BonGrid.Rows[BonGrid.Rows.Count - 1].Cells[2].Value = totalPrice.ToString("0.00");
+                            // Update the total price row
+                            BonGrid.Rows[BonGrid.Rows.Count - 1].Cells[2].Value = totalPrice.ToString("0.00");
 
-                DeleteBtn.Visible = false;
-                selectedRowIndex = -1;
-            }*/
-            
+                            DeleteBtn.Visible = false;
+                            selectedRowIndex = -1;
+                        }*/
+            BonFlowPannel.Controls.Clear();
+            FlowPanelfilledChecker();
+            TotalPriceTbx.Text = "0.00";
         }
 
         private Bitmap GetProductImage(String productName)
@@ -200,6 +215,8 @@ namespace Groentenboer_2._0_Project
 
             string bonAantal = AantalTellerTxt.Text;
 
+            string productName = ProductnaamTbx.Text;
+
             if (decimal.Parse(TotalPriceTbx.Text) > 0) {
                 decimal newPrice = decimal.Parse(TotalPriceTbx.Text);
                 newPrice += bonPrijs;
@@ -211,7 +228,7 @@ namespace Groentenboer_2._0_Project
                 TotalPriceTbx.Text = bonPrijs.ToString("0.00");
             }
 
-            bonUserControl.SetContent(bonAantal, plaatje, bonPrijs, this);
+            bonUserControl.SetContent(productName, bonAantal, plaatje, bonPrijs, this);
 
             AantalTellerTxt.Text = "0";
             ProductnaamTbx.Text = "";
@@ -222,10 +239,38 @@ namespace Groentenboer_2._0_Project
         }
 
         private void CalculatePrice()
-        {
+        {   
+            string productName = ProductnaamTbx.Text;
+/*            int amount = int.Parse(AantalTellerTxt.Text);*/
             decimal bonPrijs = optelPrijs * decimal.Parse(AantalTellerTxt.Text);
 
+            BonUserControl existingControl = VindBonUserControl(productName);
+
+            if (existingControl != null)
+            {
+
+                int existingAmount = int.Parse(existingControl.AantalTxt.Text);
+                existingAmount += int.Parse(AantalTellerTxt.Text);
+                existingControl.AantalTxt.Text = existingAmount.ToString();
+
+                decimal existingRemovePrice = decimal.Parse(existingControl.label2.Text);
+                decimal oldBonPrice = decimal.Parse(TotalPriceTbx.Text);
+                decimal changePrice = oldBonPrice  -= existingRemovePrice;
+                TotalPriceTbx.Text = changePrice.ToString("0.00");
+
+
+                decimal existingPrice = decimal.Parse(existingControl.label2.Text);
+                existingPrice += bonPrijs;
+                existingControl.label2.Text = existingPrice.ToString("0.00");
+
+
+                decimal newTotalPrice = decimal.Parse(existingControl.label2.Text);
+                TotalPriceTbx.Text = newTotalPrice.ToString("0.00");
+            }
+            else
+            {
             AddUserControl(bonPrijs);
+            }
         }
 
         public void RemoveBon(BonUserControl BonProduct)
@@ -235,6 +280,21 @@ namespace Groentenboer_2._0_Project
             decimal RemovePrijs = ProductBonPrijs;
             TotalPriceTbx.Text = (decimal.Parse(TotalPriceTbx.Text) - RemovePrijs).ToString("0.00");
             BonFlowPannel.Controls.Remove(BonProduct);
+            FlowPanelfilledChecker();
+        }
+        private BonUserControl VindBonUserControl(string productNaam)
+        {
+            foreach (Control control in BonFlowPannel.Controls)
+            {
+                if (control is BonUserControl bonUserControl)
+                {
+                    if (bonUserControl.productNaamLbl.Text == productNaam)
+                    {
+                        return bonUserControl;
+                    }
+                }
+            } 
+            return null;
 
         }
     }
