@@ -253,18 +253,19 @@ namespace Groentenboer_2._0_Project
                 existingAmount += int.Parse(AantalTellerTxt.Text);
                 existingControl.AantalTxt.Text = existingAmount.ToString();
 
-                decimal existingRemovePrice = decimal.Parse(existingControl.label2.Text);
+                decimal existingLabelPrice = decimal.Parse(existingControl.label2.Text);
                 decimal oldBonPrice = decimal.Parse(TotalPriceTbx.Text);
-                decimal changePrice = oldBonPrice  -= existingRemovePrice;
-                TotalPriceTbx.Text = changePrice.ToString("0.00");
+                decimal changePrice = oldBonPrice -= existingLabelPrice;
+
+                /*TotalPriceTbx.Text = changePrice.ToString("0.00");*/
 
 
-                decimal existingPrice = decimal.Parse(existingControl.label2.Text);
-                existingPrice += bonPrijs;
-                existingControl.label2.Text = existingPrice.ToString("0.00");
+                /*decimal existingPrice = decimal.Parse(existingControl.label2.Text);*/
+                decimal newBonprijs = existingLabelPrice += bonPrijs;
+                existingControl.label2.Text = newBonprijs.ToString("0.00");
 
-
-                decimal newTotalPrice = decimal.Parse(existingControl.label2.Text);
+                decimal newTotalPrice = changePrice += newBonprijs;
+                /*decimal newTotalPrice = decimal.Parse(existingControl.label2.Text);*/
                 TotalPriceTbx.Text = newTotalPrice.ToString("0.00");
             }
             else
@@ -277,8 +278,8 @@ namespace Groentenboer_2._0_Project
         {
             /*decimal removePrice = decimal.Parse(BonProduct.label2.Text);*/
             decimal.TryParse(BonProduct.label2.Text, out decimal ProductBonPrijs);
-            decimal RemovePrijs = ProductBonPrijs;
-            TotalPriceTbx.Text = (decimal.Parse(TotalPriceTbx.Text) - RemovePrijs).ToString("0.00");
+            /*decimal RemovePrijs = ProductBonPrijs;*/
+            TotalPriceTbx.Text = (decimal.Parse(TotalPriceTbx.Text) - ProductBonPrijs).ToString("0.00");
             BonFlowPannel.Controls.Remove(BonProduct);
             FlowPanelfilledChecker();
         }
