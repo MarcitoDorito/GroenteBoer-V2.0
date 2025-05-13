@@ -75,10 +75,10 @@
             this.productenFlp.AutoScroll = true;
             this.productenFlp.BackColor = System.Drawing.Color.DarkGray;
             this.productenFlp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.productenFlp.Location = new System.Drawing.Point(10, 92);
-            this.productenFlp.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.productenFlp.Location = new System.Drawing.Point(15, 142);
+            this.productenFlp.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.productenFlp.Name = "productenFlp";
-            this.productenFlp.Size = new System.Drawing.Size(643, 361);
+            this.productenFlp.Size = new System.Drawing.Size(964, 554);
             this.productenFlp.TabIndex = 0;
             // 
             // numbPad
@@ -105,20 +105,20 @@
             this.numbPad.Controls.Add(this.Numb9Button);
             this.numbPad.Controls.Add(this.Numb8Button);
             this.numbPad.Controls.Add(this.Numb7Button);
-            this.numbPad.Location = new System.Drawing.Point(11, 457);
-            this.numbPad.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.numbPad.Location = new System.Drawing.Point(16, 703);
+            this.numbPad.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.numbPad.Name = "numbPad";
-            this.numbPad.Size = new System.Drawing.Size(642, 152);
+            this.numbPad.Size = new System.Drawing.Size(962, 233);
             this.numbPad.TabIndex = 16;
             // 
             // addButton
             // 
             this.addButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(17, 82);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.addButton.Location = new System.Drawing.Point(26, 126);
+            this.addButton.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(269, 50);
+            this.addButton.Size = new System.Drawing.Size(404, 77);
             this.addButton.TabIndex = 16;
             this.addButton.Text = "Toevoegen";
             this.addButton.UseVisualStyleBackColor = true;
@@ -128,11 +128,11 @@
             // 
             this.AantalTellerTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.AantalTellerTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AantalTellerTxt.Location = new System.Drawing.Point(137, 36);
-            this.AantalTellerTxt.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.AantalTellerTxt.Location = new System.Drawing.Point(206, 55);
+            this.AantalTellerTxt.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.AantalTellerTxt.MaxLength = 3;
             this.AantalTellerTxt.Name = "AantalTellerTxt";
-            this.AantalTellerTxt.Size = new System.Drawing.Size(57, 41);
+            this.AantalTellerTxt.Size = new System.Drawing.Size(84, 57);
             this.AantalTellerTxt.TabIndex = 14;
             this.AantalTellerTxt.Text = "0";
             this.AantalTellerTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -143,10 +143,9 @@
             this.prijsTxt.AutoSize = true;
             this.prijsTxt.BackColor = System.Drawing.Color.White;
             this.prijsTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prijsTxt.Location = new System.Drawing.Point(136, 12);
-            this.prijsTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.prijsTxt.Location = new System.Drawing.Point(204, 18);
             this.prijsTxt.Name = "prijsTxt";
-            this.prijsTxt.Size = new System.Drawing.Size(58, 22);
+            this.prijsTxt.Size = new System.Drawing.Size(81, 30);
             this.prijsTxt.TabIndex = 10;
             this.prijsTxt.Text = "label2";
             // 
@@ -156,20 +155,19 @@
             this.aantalTxt.AutoSize = true;
             this.aantalTxt.BackColor = System.Drawing.Color.White;
             this.aantalTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aantalTxt.Location = new System.Drawing.Point(205, 12);
-            this.aantalTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.aantalTxt.Location = new System.Drawing.Point(308, 18);
             this.aantalTxt.Name = "aantalTxt";
-            this.aantalTxt.Size = new System.Drawing.Size(58, 22);
+            this.aantalTxt.Size = new System.Drawing.Size(81, 30);
             this.aantalTxt.TabIndex = 11;
             this.aantalTxt.Text = "label3";
             // 
             // button13
             // 
             this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.Location = new System.Drawing.Point(563, 108);
-            this.button13.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button13.Location = new System.Drawing.Point(844, 166);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(67, 29);
+            this.button13.Size = new System.Drawing.Size(100, 45);
             this.button13.TabIndex = 11;
             this.button13.Text = "Reset";
             this.button13.UseVisualStyleBackColor = true;
@@ -178,10 +176,10 @@
             // Numb00Button
             // 
             this.Numb00Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb00Button.Location = new System.Drawing.Point(491, 108);
-            this.Numb00Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Numb00Button.Location = new System.Drawing.Point(736, 166);
+            this.Numb00Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb00Button.Name = "Numb00Button";
-            this.Numb00Button.Size = new System.Drawing.Size(67, 29);
+            this.Numb00Button.Size = new System.Drawing.Size(100, 45);
             this.Numb00Button.TabIndex = 10;
             this.Numb00Button.Text = "00";
             this.Numb00Button.UseVisualStyleBackColor = true;
@@ -192,20 +190,20 @@
             this.ProductnaamTbx.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ProductnaamTbx.Enabled = false;
             this.ProductnaamTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductnaamTbx.Location = new System.Drawing.Point(2, 37);
-            this.ProductnaamTbx.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ProductnaamTbx.Location = new System.Drawing.Point(3, 57);
+            this.ProductnaamTbx.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ProductnaamTbx.Multiline = true;
             this.ProductnaamTbx.Name = "ProductnaamTbx";
-            this.ProductnaamTbx.Size = new System.Drawing.Size(119, 40);
+            this.ProductnaamTbx.Size = new System.Drawing.Size(176, 59);
             this.ProductnaamTbx.TabIndex = 6;
             // 
             // Numb0Button
             // 
             this.Numb0Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb0Button.Location = new System.Drawing.Point(419, 108);
-            this.Numb0Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Numb0Button.Location = new System.Drawing.Point(628, 166);
+            this.Numb0Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb0Button.Name = "Numb0Button";
-            this.Numb0Button.Size = new System.Drawing.Size(67, 29);
+            this.Numb0Button.Size = new System.Drawing.Size(100, 45);
             this.Numb0Button.TabIndex = 9;
             this.Numb0Button.Text = "0";
             this.Numb0Button.UseVisualStyleBackColor = true;
@@ -214,10 +212,10 @@
             // num3Button
             // 
             this.num3Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.num3Button.Location = new System.Drawing.Point(563, 74);
-            this.num3Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.num3Button.Location = new System.Drawing.Point(844, 114);
+            this.num3Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.num3Button.Name = "num3Button";
-            this.num3Button.Size = new System.Drawing.Size(67, 29);
+            this.num3Button.Size = new System.Drawing.Size(100, 45);
             this.num3Button.TabIndex = 8;
             this.num3Button.Text = "3";
             this.num3Button.UseVisualStyleBackColor = true;
@@ -228,10 +226,10 @@
             this.PrijsTbx.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PrijsTbx.Enabled = false;
             this.PrijsTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrijsTbx.Location = new System.Drawing.Point(209, 36);
-            this.PrijsTbx.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.PrijsTbx.Location = new System.Drawing.Point(314, 55);
+            this.PrijsTbx.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.PrijsTbx.Name = "PrijsTbx";
-            this.PrijsTbx.Size = new System.Drawing.Size(91, 41);
+            this.PrijsTbx.Size = new System.Drawing.Size(134, 57);
             this.PrijsTbx.TabIndex = 8;
             // 
             // productNaamTxt
@@ -240,20 +238,19 @@
             this.productNaamTxt.AutoSize = true;
             this.productNaamTxt.BackColor = System.Drawing.Color.White;
             this.productNaamTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productNaamTxt.Location = new System.Drawing.Point(1, 12);
-            this.productNaamTxt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.productNaamTxt.Location = new System.Drawing.Point(2, 18);
             this.productNaamTxt.Name = "productNaamTxt";
-            this.productNaamTxt.Size = new System.Drawing.Size(58, 22);
+            this.productNaamTxt.Size = new System.Drawing.Size(81, 30);
             this.productNaamTxt.TabIndex = 9;
             this.productNaamTxt.Text = "label1";
             // 
             // numb2Button
             // 
             this.numb2Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.numb2Button.Location = new System.Drawing.Point(491, 74);
-            this.numb2Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.numb2Button.Location = new System.Drawing.Point(736, 114);
+            this.numb2Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.numb2Button.Name = "numb2Button";
-            this.numb2Button.Size = new System.Drawing.Size(67, 29);
+            this.numb2Button.Size = new System.Drawing.Size(100, 45);
             this.numb2Button.TabIndex = 7;
             this.numb2Button.Text = "2";
             this.numb2Button.UseVisualStyleBackColor = true;
@@ -262,10 +259,10 @@
             // num1Button
             // 
             this.num1Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.num1Button.Location = new System.Drawing.Point(419, 74);
-            this.num1Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.num1Button.Location = new System.Drawing.Point(628, 114);
+            this.num1Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.num1Button.Name = "num1Button";
-            this.num1Button.Size = new System.Drawing.Size(67, 29);
+            this.num1Button.Size = new System.Drawing.Size(100, 45);
             this.num1Button.TabIndex = 6;
             this.num1Button.Text = "1";
             this.num1Button.UseVisualStyleBackColor = true;
@@ -274,10 +271,10 @@
             // Numb6Button
             // 
             this.Numb6Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb6Button.Location = new System.Drawing.Point(563, 40);
-            this.Numb6Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Numb6Button.Location = new System.Drawing.Point(844, 62);
+            this.Numb6Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb6Button.Name = "Numb6Button";
-            this.Numb6Button.Size = new System.Drawing.Size(67, 29);
+            this.Numb6Button.Size = new System.Drawing.Size(100, 45);
             this.Numb6Button.TabIndex = 5;
             this.Numb6Button.Text = "6";
             this.Numb6Button.UseVisualStyleBackColor = true;
@@ -286,10 +283,10 @@
             // Numb5Button
             // 
             this.Numb5Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb5Button.Location = new System.Drawing.Point(491, 40);
-            this.Numb5Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Numb5Button.Location = new System.Drawing.Point(736, 62);
+            this.Numb5Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb5Button.Name = "Numb5Button";
-            this.Numb5Button.Size = new System.Drawing.Size(67, 29);
+            this.Numb5Button.Size = new System.Drawing.Size(100, 45);
             this.Numb5Button.TabIndex = 4;
             this.Numb5Button.Text = "5";
             this.Numb5Button.UseVisualStyleBackColor = true;
@@ -298,10 +295,10 @@
             // Numb4Button
             // 
             this.Numb4Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb4Button.Location = new System.Drawing.Point(419, 40);
-            this.Numb4Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Numb4Button.Location = new System.Drawing.Point(628, 62);
+            this.Numb4Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb4Button.Name = "Numb4Button";
-            this.Numb4Button.Size = new System.Drawing.Size(67, 29);
+            this.Numb4Button.Size = new System.Drawing.Size(100, 45);
             this.Numb4Button.TabIndex = 3;
             this.Numb4Button.Text = "4";
             this.Numb4Button.UseVisualStyleBackColor = true;
@@ -310,10 +307,10 @@
             // Numb9Button
             // 
             this.Numb9Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb9Button.Location = new System.Drawing.Point(563, 6);
-            this.Numb9Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Numb9Button.Location = new System.Drawing.Point(844, 9);
+            this.Numb9Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb9Button.Name = "Numb9Button";
-            this.Numb9Button.Size = new System.Drawing.Size(67, 29);
+            this.Numb9Button.Size = new System.Drawing.Size(100, 45);
             this.Numb9Button.TabIndex = 2;
             this.Numb9Button.Text = "9";
             this.Numb9Button.UseVisualStyleBackColor = true;
@@ -322,10 +319,10 @@
             // Numb8Button
             // 
             this.Numb8Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb8Button.Location = new System.Drawing.Point(491, 6);
-            this.Numb8Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Numb8Button.Location = new System.Drawing.Point(736, 9);
+            this.Numb8Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb8Button.Name = "Numb8Button";
-            this.Numb8Button.Size = new System.Drawing.Size(67, 29);
+            this.Numb8Button.Size = new System.Drawing.Size(100, 45);
             this.Numb8Button.TabIndex = 1;
             this.Numb8Button.Text = "8";
             this.Numb8Button.UseVisualStyleBackColor = true;
@@ -334,10 +331,10 @@
             // Numb7Button
             // 
             this.Numb7Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Numb7Button.Location = new System.Drawing.Point(419, 6);
-            this.Numb7Button.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Numb7Button.Location = new System.Drawing.Point(628, 9);
+            this.Numb7Button.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Numb7Button.Name = "Numb7Button";
-            this.Numb7Button.Size = new System.Drawing.Size(67, 29);
+            this.Numb7Button.Size = new System.Drawing.Size(100, 45);
             this.Numb7Button.TabIndex = 0;
             this.Numb7Button.Text = "7";
             this.Numb7Button.UseVisualStyleBackColor = true;
@@ -346,12 +343,12 @@
             // DeleteBtn
             // 
             this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteBtn.Location = new System.Drawing.Point(201, 3);
-            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.DeleteBtn.Location = new System.Drawing.Point(302, 5);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(150, 49);
+            this.DeleteBtn.Size = new System.Drawing.Size(225, 75);
             this.DeleteBtn.TabIndex = 17;
-            this.DeleteBtn.Text = "afbreaken";
+            this.DeleteBtn.Text = "afbreken";
             this.DeleteBtn.UseVisualStyleBackColor = true;
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
@@ -362,10 +359,9 @@
             this.BonFlowPannel.AutoScroll = true;
             this.BonFlowPannel.BackColor = System.Drawing.Color.Beige;
             this.BonFlowPannel.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
-            this.BonFlowPannel.Location = new System.Drawing.Point(656, 10);
-            this.BonFlowPannel.Margin = new System.Windows.Forms.Padding(2);
+            this.BonFlowPannel.Location = new System.Drawing.Point(984, 15);
             this.BonFlowPannel.Name = "BonFlowPannel";
-            this.BonFlowPannel.Size = new System.Drawing.Size(353, 495);
+            this.BonFlowPannel.Size = new System.Drawing.Size(530, 762);
             this.BonFlowPannel.TabIndex = 18;
             this.BonFlowPannel.WrapContents = false;
             // 
@@ -375,20 +371,18 @@
             this.panel3.BackColor = System.Drawing.Color.OldLace;
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.TotalPriceTbx);
-            this.panel3.Location = new System.Drawing.Point(656, 509);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(984, 783);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(352, 36);
+            this.panel3.Size = new System.Drawing.Size(528, 55);
             this.panel3.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(9, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 20);
+            this.label1.Size = new System.Drawing.Size(147, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Totaal Prijs";
             // 
@@ -398,13 +392,12 @@
             this.TotalPriceTbx.BackColor = System.Drawing.SystemColors.Window;
             this.TotalPriceTbx.Enabled = false;
             this.TotalPriceTbx.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalPriceTbx.Location = new System.Drawing.Point(201, 2);
-            this.TotalPriceTbx.Margin = new System.Windows.Forms.Padding(2);
+            this.TotalPriceTbx.Location = new System.Drawing.Point(302, 3);
             this.TotalPriceTbx.Multiline = false;
             this.TotalPriceTbx.Name = "TotalPriceTbx";
             this.TotalPriceTbx.ReadOnly = true;
             this.TotalPriceTbx.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TotalPriceTbx.Size = new System.Drawing.Size(150, 33);
+            this.TotalPriceTbx.Size = new System.Drawing.Size(223, 49);
             this.TotalPriceTbx.TabIndex = 0;
             this.TotalPriceTbx.Text = "0";
             // 
@@ -415,28 +408,25 @@
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(10, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(15, 15);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(642, 77);
+            this.panel1.Size = new System.Drawing.Size(963, 118);
             this.panel1.TabIndex = 19;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 39);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(4, 60);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 36);
+            this.button2.Size = new System.Drawing.Size(135, 55);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 2);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 36);
+            this.button1.Size = new System.Drawing.Size(135, 55);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -447,19 +437,17 @@
             this.BonKnopPanel.BackColor = System.Drawing.Color.Wheat;
             this.BonKnopPanel.Controls.Add(this.button3);
             this.BonKnopPanel.Controls.Add(this.DeleteBtn);
-            this.BonKnopPanel.Location = new System.Drawing.Point(656, 555);
-            this.BonKnopPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.BonKnopPanel.Location = new System.Drawing.Point(984, 854);
             this.BonKnopPanel.Name = "BonKnopPanel";
-            this.BonKnopPanel.Size = new System.Drawing.Size(353, 53);
+            this.BonKnopPanel.Size = new System.Drawing.Size(530, 82);
             this.BonKnopPanel.TabIndex = 20;
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(2, 2);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(3, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 49);
+            this.button3.Size = new System.Drawing.Size(234, 75);
             this.button3.TabIndex = 18;
             this.button3.Text = "Bewerken";
             this.button3.UseVisualStyleBackColor = true;
@@ -470,12 +458,12 @@
             this.BonGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BonGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BonGrid.Location = new System.Drawing.Point(656, 10);
-            this.BonGrid.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.BonGrid.Location = new System.Drawing.Point(984, 15);
+            this.BonGrid.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.BonGrid.Name = "BonGrid";
             this.BonGrid.RowHeadersWidth = 51;
             this.BonGrid.RowTemplate.Height = 24;
-            this.BonGrid.Size = new System.Drawing.Size(353, 539);
+            this.BonGrid.Size = new System.Drawing.Size(530, 829);
             this.BonGrid.TabIndex = 15;
             this.BonGrid.Visible = false;
             this.BonGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BonGrid_CellClick);
@@ -483,10 +471,10 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
-            this.ClientSize = new System.Drawing.Size(1017, 612);
+            this.ClientSize = new System.Drawing.Size(1526, 942);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.BonKnopPanel);
             this.Controls.Add(this.panel1);
@@ -494,7 +482,7 @@
             this.Controls.Add(this.numbPad);
             this.Controls.Add(this.BonGrid);
             this.Controls.Add(this.productenFlp);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "MainForm";
             this.Text = "KassaScherm";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -541,8 +529,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox TotalPriceTbx;
-        private System.Windows.Forms.DataGridView BonGrid;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView BonGrid;
     }
 }
 

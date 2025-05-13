@@ -27,12 +27,17 @@ namespace Groentenboer_2._0_Project
             label1.Text = groenten;
             naam = groenten;
             pictureBox1.Image = plaatjePath;
-            label2.Text = "€" + prijs.ToString("0.00") + " per kilo";
+            label2.Text = "€" + prijs.ToString("0.00");
 
             plaatje = plaatjePath;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
 
         }

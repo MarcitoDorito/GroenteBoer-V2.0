@@ -83,9 +83,9 @@ namespace Groentenboer_2._0_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Banaan {
+        internal static System.Drawing.Bitmap Bananen {
             get {
-                object obj = ResourceManager.GetObject("Banaan", resourceCulture);
+                object obj = ResourceManager.GetObject("Bananen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
