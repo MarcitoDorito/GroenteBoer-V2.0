@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\groentenboer 2.0 project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|solutionrelative:groentenboer 2.0 project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|d:\\github projecten\\groenteboer-v2.0\\groentenboer 2.0 project\\groentenboer 2.0 project\\groentedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|solutionrelative:groentenboer 2.0 project\\groentedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\groentenboer 2.0 project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|solutionrelative:groentenboer 2.0 project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\groentenboer 2.0 project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -40,10 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\groentenboer 2.0 project\\bonusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|solutionrelative:groentenboer 2.0 project\\bonusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|d:\\github projecten\\groenteboer-v2.0\\groentenboer 2.0 project\\groentenboer 2.0 project\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{67DC3B75-F2DC-492E-8234-B5A41CDD64AA}|Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj|solutionrelative:groentenboer 2.0 project\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
@@ -66,22 +62,20 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T10:16:31.001Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\Groentenboer 2.0 Project\\Form1.cs",
               "RelativeDocumentMoniker": "Groentenboer 2.0 Project\\Form1.cs",
               "ToolTip": "D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\Groentenboer 2.0 Project\\Form1.cs",
               "RelativeToolTip": "Groentenboer 2.0 Project\\Form1.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAiwC0AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAiwC0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T09:03:52.716Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -93,8 +87,7 @@
               "RelativeToolTip": "Groentenboer 2.0 Project\\Groentenboer 2.0 Project.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-01-16T10:54:50.085Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -129,18 +122,17 @@
               "ToolTip": "D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\Groentenboer 2.0 Project\\UserControl1.cs [Design]",
               "RelativeToolTip": "Groentenboer 2.0 Project\\UserControl1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T09:08:54.005Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-16T09:08:54.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GroenteDB.cs",
               "DocumentMoniker": "D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\Groentenboer 2.0 Project\\GroenteDB.cs",
               "RelativeDocumentMoniker": "Groentenboer 2.0 Project\\GroenteDB.cs",
               "ToolTip": "D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\Groentenboer 2.0 Project\\GroenteDB.cs",
               "RelativeToolTip": "Groentenboer 2.0 Project\\GroenteDB.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAArwBoAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAASwBoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T09:03:24.161Z",
               "EditorCaption": ""
@@ -154,8 +146,7 @@
               "ToolTip": "D:\\Github Projecten\\GroenteBoer-V2.0\\Groentenboer 2.0 Project\\Groentenboer 2.0 Project\\Form1.cs [Design]",
               "RelativeToolTip": "Groentenboer 2.0 Project\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:31:32.282Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-15T21:31:32.282Z"
             },
             {
               "$type": "Document",
@@ -167,8 +158,7 @@
               "RelativeToolTip": "Groentenboer 2.0 Project\\UserControl1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:37:53.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T16:37:53.201Z"
             },
             {
               "$type": "Document",
@@ -180,8 +170,7 @@
               "RelativeToolTip": "Groentenboer 2.0 Project\\UserControl1.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAMwA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T16:36:58.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T16:36:58.805Z"
             },
             {
               "$type": "Document",
