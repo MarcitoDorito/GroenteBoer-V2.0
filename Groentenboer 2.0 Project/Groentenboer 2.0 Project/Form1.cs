@@ -39,11 +39,11 @@ namespace Groentenboer_2._0_Project
 
         public void ProductSelect(object sender, EventArgs e, DatabaseHelper.GroenteNaam item)
         {
-            decimal newPrijs = new decimal(item.prijs) / 100;
-            optelPrijs = newPrijs;
+            //decimal newPrijs = new decimal(item.prijs) / 100;
+            optelPrijs = item.prijs;
             ProductnaamTbx.Text = item.productNaam;
             AantalTellerTxt.Text = "0";
-            PrijsTbx.Text = newPrijs.ToString("0.00");
+            PrijsTbx.Text = item.prijs.ToString("0.00");
             numpad_visable();
         }
 
@@ -85,8 +85,8 @@ namespace Groentenboer_2._0_Project
                 productenFlp.Controls.Add(uc);
                 uc.Click += new EventHandler((s, e2) => ProductSelect(s, e2, item));
                 uc.BackColor = SystemColors.Window;
-                decimal newPrijs = new decimal(item.prijs) / 100;
-                uc.SetContent(item.productNaam, item.plaatje, newPrijs);
+                //decimal newPrijs = new decimal(item.prijs) / 100;
+                uc.SetContent(item.productNaam, item.plaatje, item.prijs);
 
                 foreach (Control uc2 in uc.Controls)
                 {

@@ -24,7 +24,7 @@ namespace Groentenboer_2._0_Project
         public class GroenteNaam
         {
             public string productNaam;
-            public int prijs;
+            public decimal prijs;
             public Bitmap plaatje;
         }
         public List<GroenteNaam> GetGroenten()
@@ -46,8 +46,8 @@ namespace Groentenboer_2._0_Project
                         var groenten = reader["productNaam"].ToString();
                         var x = new GroenteNaam();
                         x.productNaam = groenten;
-                        x.prijs = (int)reader["prijs"];
-                        decimal d = new decimal(x.prijs);
+                        x.prijs = (decimal)reader["prijs"];
+                        //decimal d = new decimal(x.prijs);
                         x.plaatje = (Bitmap) Properties.Resources.ResourceManager.GetObject(reader["productNaam"].ToString());
 
                         groentenLijst.Add(x);
